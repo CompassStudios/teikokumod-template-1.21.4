@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "teikokumod",
+	"version": "${version}",
+	"name": "Teikoku Mod",
+	"description": "A simple mod dedicated for the server Teikoku to make a lot of custom entity skins",
+	"authors": [
+		"Compass Studios!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/teikokumod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.compassstudios.teikokumod.TeikokuMod"
+		],
+		"fabric-datagen": [
+			"net.compassstudios.teikokumod.TeikokuModDataGenerator"
+		],
+		"client": [
+			"net.compassstudios.teikokumod.TeikokuModClient"
+		]
+	},
+	"mixins": [
+		"teikokumod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
